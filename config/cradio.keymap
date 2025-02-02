@@ -53,8 +53,8 @@
         default_layer {
             bindings = <
 &kp Q    &kp W       &kp E        &kp R                    &kp T                   &kp Y           &kp U              &kp I        &kp O       &kp P
-&lt 5 A  &ht LALT S  &ht LCTRL D  &ht LEFT_SHIFT F         &ht LEFT_GUI G          &ht LEFT_WIN H  &ht RIGHT_SHIFT J  &ht RCTRL K  &ht RALT L  &lt 1 SEMICOLON
-&kp Z    &kp X       &kp C        &lt 4 V                  &kp B                   &kp N           &lt 3 M            &kp COMMA    &kp DOT     &kp SLASH
+&lt 4 A  &ht LALT S  &ht LCTRL D  &ht LEFT_SHIFT F         &ht LEFT_GUI G          &ht LEFT_WIN H  &ht RIGHT_SHIFT J  &ht RCTRL K  &ht RALT L  &lt 1 SEMICOLON
+&kp Z    &kp X       &kp C        &lt 5 V                  &kp B                   &kp N           &lt 3 M            &kp COMMA    &kp DOT     &kp SLASH
                                   &mt LEFT_CONTROL DELETE  &mt LSHIFT BACKSPACE    &lt 2 SPACE     &kp ENTER
             >;
         };
@@ -77,6 +77,15 @@
             >;
         };
 
+        func {
+            bindings = <
+&kp F1   &kp F2   &kp F3  &kp F4  &kp F5     &none  &none  &none   &none  &none
+&kp F6   &kp F7   &kp F8  &kp F9  &kp F10    &none  &none  &none   &none  &none
+&kp F11  &kp F12  &none   &none   &none      &none  &none  &trans  &none  &none
+                          &none   &none      &none  &none
+            >;
+        };
+
         symbols {
             bindings = <
 &none   &kp CAPSLOCK      &kp PLUS        &kp SQT               &kp CARET    &kp ASTERISK  &kp DOUBLE_QUOTES      &kp AT_SIGN      &kp RIGHT_WIN      &kp PERCENT
@@ -92,15 +101,6 @@
 &none  &none  &none  &none     &none       &none     &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none
 &none  &none  &none  &none     &none       &none     &msc SCRL_UP    &msc SCRL_DOWN  &none            &none
                      &mkp MB2  &mkp MB1    &mkp MB3  &none
-            >;
-        };
-
-        func {
-            bindings = <
-&kp F1   &kp F2   &kp F3  &kp F4  &kp F5     &none  &none  &none   &none  &none
-&kp F6   &kp F7   &kp F8  &kp F9  &kp F10    &none  &none  &none   &none  &none
-&kp F11  &kp F12  &none   &none   &none      &none  &none  &trans  &none  &none
-                          &none   &none      &none  &none
             >;
         };
     };
