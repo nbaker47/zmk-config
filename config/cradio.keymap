@@ -40,7 +40,7 @@
 
         msc {
             acceleration-exponent = <1>;      // 0
-            time-to-max-speed-ms = <500>;      // 500
+            time-to-max-speed-ms = <200>;      // 500
             delay-ms = <0>;                   // 10
         };
     };
@@ -97,10 +97,10 @@
 
         mouse {
             bindings = <
-&none  &none  &none  &none     &none       &none     &none           &mmv MOVE_UP    &none            &none
-&none  &none  &none  &none     &none       &none     &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none
-&none  &none  &none  &none     &none       &none     &msc SCRL_UP    &msc SCRL_DOWN  &none            &none
-                     &mkp MB2  &mkp MB1    &mkp MB3  &none
+&none  &none  &none  &none     &none       &none           &none           &mmv MOVE_UP    &none            &none
+&none  &none  &none  &none     &none       &msc SCRL_LEFT  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_RIGHT
+&none  &none  &none  &none     &none       &none           &msc SCRL_UP    &msc SCRL_DOWN  &none            &none
+                     &mkp MB2  &mkp MB1    &mkp MB3        &none
             >;
         };
     };
