@@ -18,6 +18,7 @@
 #define MOUSE 5
 
 / {
+/ {
     chosen { zmk,charmap = &charmap_us; };
 
     behaviors {
@@ -72,26 +73,26 @@
             bindings = <
 &kp F1        &kp F2        &kp F3        &kp F4            &kp F5            &kp F6        &kp F7    &kp F8        &kp F9  &kp F10
 &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4      &kp NUMBER_5      &kp NUMBER_6  &kp N7    &kp NUMBER_8  &kp N9  &kp NUMBER_0
-&none         &none         &none         &kp PERCENT       &kp ASTERISK      &kp KP_PLUS   &kp PLUS  &none         &none   &none
+&none         &none         &none         &kp PERCENT       &kp ASTERISK      &kp KP_EQUAL  &kp PLUS  &none         &none   &none
                                           &kp LEFT_CONTROL  &kp LEFT_SHIFT    &trans        &trans
             >;
         };
 
         func {
             bindings = <
-&kp F1   &kp F2   &kp F3  &kp F4  &kp F5     &none  &none  &none   &none  &none
-&kp F6   &kp F7   &kp F8  &kp F9  &kp F10    &none  &none  &none   &none  &none
-&kp F11  &kp F12  &none   &none   &none      &none  &none  &trans  &none  &none
-                          &none   &none      &none  &none
+&kp F1   &kp F2   &kp F3  &kp F4  &kp F5         &none  &none  &none   &none  &none
+&kp F6   &kp F7   &kp F8  &kp F9  &kp F10        &none  &none  &none   &none  &none
+&kp F11  &kp F12  &none   &none   &bootloader    &none  &none  &trans  &none  &bootloader
+                          &none   &none          &none  &none
             >;
         };
 
         symbols {
             bindings = <
-&none   &kp CAPSLOCK      &kp PLUS        &kp SQT               &kp CARET    &kp ASTERISK  &kp DOUBLE_QUOTES      &kp AT_SIGN      &kp RIGHT_WIN      &kp PERCENT
-&trans  &kp LEFT_BRACKET  &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &kp PIPE     &kp SLASH     &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp COLON
-&trans  &kp AMPERSAND     &kp GRAVE       &kp EXCLAMATION       &kp PLUS     &kp TILDE     &kp QUESTION           &kp TILDE        &kp DOLLAR         &kp HASH
-                                          &none                 &none        &none         &none
+&none   &kp CAPSLOCK      &kp PLUS        &kp SQT               &kp CARET    &kp ASTERISK          &kp DOUBLE_QUOTES      &kp AT_SIGN      &kp RIGHT_WIN      &kp PERCENT
+&trans  &kp LEFT_BRACKET  &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &kp PIPE     &kp SLASH             &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp COLON
+&trans  &kp AMPERSAND     &kp GRAVE       &kp EXCLAMATION       &kp PLUS     &kp NON_US_BACKSLASH  &kp QUESTION           &kp TILDE        &kp DOLLAR         &kp HASH
+                                          &none                 &none        &none                 &none
             >;
         };
 
