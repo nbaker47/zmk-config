@@ -18,7 +18,6 @@
 #define MOUSE 5
 
 / {
-/ {
     chosen { zmk,charmap = &charmap_us; };
 
     behaviors {
