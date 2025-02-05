@@ -70,28 +70,28 @@
 
         numbers {
             bindings = <
-&kp F1        &kp F2        &kp F3        &kp F4            &kp F5            &kp F6        &kp F7    &kp F8        &kp F9  &kp F10
-&kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4      &kp NUMBER_5      &kp NUMBER_6  &kp N7    &kp NUMBER_8  &kp N9  &kp NUMBER_0
-&none         &none         &none         &kp PERCENT       &kp ASTERISK      &kp EQUAL     &kp PLUS  &none         &none   &none
-                                          &kp LEFT_CONTROL  &kp LEFT_SHIFT    &trans        &trans
+&kp F1        &kp F2        &kp F3        &kp F4            &kp F5            &kp F6         &kp F7         &kp F8         &kp F9  &kp F10
+&kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4      &kp NUMBER_5      &kp NUMBER_6   &kp N7         &kp NUMBER_8   &kp N9  &kp NUMBER_0
+&none         &none         &kp MINUS     &kp PERCENT       &kp ASTERISK      &kp LS(EQUAL)  &kp PLUS       &kp LS(MINUS)  &none   &none
+                                          &kp LEFT_CONTROL  &kp LEFT_SHIFT    &trans         &kp RIGHT_ALT
             >;
         };
 
         func {
             bindings = <
-&kp F1   &kp F2   &kp F3  &kp F4  &kp F5         &none  &none  &bt BT_SEL 0  &none  &studio_unlock
-&kp F6   &kp F7   &kp F8  &kp F9  &kp F10        &none  &none  &bt BT_SEL 1  &none  &none
-&kp F11  &kp F12  &none   &none   &bootloader    &none  &none  &bt BT_SEL 2  &none  &bootloader
+&kp F1   &kp F2   &kp F3  &kp F4  &kp F5         &none  &none  &bt BT_SEL 0  &bt BT_SEL 3  &studio_unlock
+&kp F6   &kp F7   &kp F8  &kp F9  &kp F10        &none  &none  &bt BT_SEL 1  &bt BT_SEL 4  &none
+&kp F11  &kp F12  &none   &none   &bootloader    &none  &none  &bt BT_SEL 2  &none         &bootloader
                           &none   &none          &none  &none
             >;
         };
 
         symbols {
             bindings = <
-&none   &kp CAPSLOCK      &kp PLUS        &kp SQT               &kp CARET    &kp ASTERISK          &kp DOUBLE_QUOTES      &kp AT_SIGN      &kp RIGHT_WIN      &kp PERCENT
-&trans  &kp LEFT_BRACKET  &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &kp PIPE     &kp SLASH             &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp COLON
-&trans  &kp AMPERSAND     &kp GRAVE       &kp EXCLAMATION       &kp PLUS     &kp NON_US_BACKSLASH  &kp QUESTION           &kp TILDE        &kp DOLLAR         &kp HASH
-                                          &none                 &none        &none                 &none
+&none   &kp CAPSLOCK      &kp PLUS        &kp SQT               &kp CARET    &kp ASTERISK   &kp DOUBLE_QUOTES      &kp AT_SIGN      &kp RIGHT_WIN      &kp PERCENT
+&trans  &kp LEFT_BRACKET  &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &kp PIPE     &kp SLASH      &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp COLON
+&trans  &kp AMPERSAND     &kp GRAVE       &kp EXCLAMATION       &kp PLUS     &kp BACKSLASH  &kp QUESTION           &kp TILDE        &kp DOLLAR         &kp HASH
+                                          &none                 &none        &none          &none
             >;
         };
 
